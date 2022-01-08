@@ -20,6 +20,11 @@ header img {
   padding: 10px 0px;
 }
 
+header p {
+  color: whitesmoke;
+  font-weight: 700;
+}
+
 body section:first-of-type {
   display: flex;
   justify-content: center;
@@ -28,36 +33,95 @@ body section:first-of-type {
   background-color: #29539b;
   background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%);
   padding: 50px 0px;
+  color: whitesmoke;
 }
 
-.info {
+.info.main {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   max-width: 400px;
 }
 
-.info h1, .info h4 {
+.info.main h1, .info.main h4 {
   text-align: end;
 }
 
-.info h4 {
+.info.main h4 {
   font-weight: 100;
 }
 
-.info button {
-  background-color: #CC1C4A;
+.info.main button {
+  background-color: #DB0840;
   border-radius: 5px; 
   border-style: none;
   padding: 10px 40px;
   font-weight: 700;
   font-size: 14px;
+  color: whitesmoke;
 }
 
-.featured-image {
+.info.main button:hover {
+  background-color: #f30b47;
+}
+
+.main.featured-image {
   width: 400px;
   height: 170px;
 }
+
+body section:nth-of-type(2) {
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+body section:nth-of-type(2) .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body section:nth-of-type(2) .info p {
+  color: #737477;
+  margin-top: -10px;
+}
+
+.product-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.product-list .product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+}
+
+.product-list .product:hover {
+  width: 140px;
+  transition: 0.2s;
+}
+
+.product-list .product button {
+  background: transparent;
+  border: none;
+}
+
+.product-list .product img {
+  width: 100%;
+  height: auto;
+}
+
+.product-list .product p {
+  font-weight: 700;
+  max-width: 100px;
+  text-align: center;
+  
+}
+
 
 footer {
   display: flex;
@@ -69,5 +133,4 @@ footer {
 
 h1, h2, h3, h4, button, p {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: whitesmoke;
 }
