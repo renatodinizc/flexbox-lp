@@ -1,4 +1,4 @@
-R3dbull
+# R3dbull
 
 The R3dbull project is in essence a landpage inspired by the official Redbull®
 product page https://www.redbull.com/us-en/energydrink
